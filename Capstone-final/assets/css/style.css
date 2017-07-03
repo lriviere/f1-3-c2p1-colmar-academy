@@ -1,0 +1,541 @@
+
+
+/*================*/
+/*Universal styles*/
+/*================*/
+
+
+html  {
+  font-size: 12px;
+}
+
+body {
+    font-family:'Raleway', sans-serif;
+    width:100%;
+    background-color: white;
+}
+
+.wrapper {
+  max-width: 105rem;
+  margin: 0 auto;
+  /*border: 1px solid yellow;*/
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight:900;
+  margin-top: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding-top: 0.67rem;
+  padding-bottom: 0.67rem;
+}
+
+p, a {
+  font-size: 1.4rem;
+}
+
+a:hover {
+  color: #316bad;
+  border-color: #316bad;
+  transition: all .3s ease-in-out;
+}
+
+.container {
+
+  /**border: 1px solid black; for debugging **/
+  display: flex;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.left-container {
+  flex: 1;
+  max-width: 60%;
+  padding-right: 2rem;
+}
+
+.right-container {
+  flex: 1;
+  max-width: 40%;
+}
+
+.quote {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*================*/
+/*MOBILE FOR GENERIC */
+/*================*/
+@media only screen and (max-width: 470px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4, a, p {
+    font-size: 1rem;
+  }
+
+  .left-container, .right-container  {
+    max-width: 100%;
+    padding: 0;
+  }
+
+}
+
+/*@media only screen and (min-width: 472px) and (max-width:769px) {
+  h1 {
+    font-size: 3rem;
+  }
+}*/
+
+
+/*================*/
+/*Tablet for Generic*/
+/*================*/
+
+@media only screen and (max-width: 770px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4, a, p {
+    font-size: 1rem;
+  }
+
+}
+
+/*================*/
+     /*Header*/
+/*================*/
+.header-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  /*border: 1px solid green;*/
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header {
+  /*border: 1px solid red; */
+  height: 4rem;
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: center;
+  font-size: 2rem;
+  background-color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header span {
+  font-weight: 600;
+  color:#316bad;
+}
+
+nav {
+  /**border: 1px solid orange; for debugging **/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav.mobile {
+  display: none;
+  width:100%;
+}
+
+nav li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+nav a {
+  font-size: 1.5rem;
+}
+/*================*/
+/****** MOBILE FOR HEADER *****/
+/*================*/
+
+@media only screen and (max-width: 470px){
+  .logo {
+    display: none;
+  }
+  nav.desktop  {
+    display: none;
+    }
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    height: 5.3rem;
+  }
+}
+
+/*================*/
+/*Main banner*/
+/*================*/
+
+.jumbotron {
+  padding: 3.7rem 2rem;
+  background-color: #c3cfdd;
+  width:auto;
+}
+
+.jumbotron .right-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-container img {
+  max-width:100%;
+}
+
+.cta {
+  padding: 2rem 2rem;
+  color: #555555;
+}
+
+.cta-button {
+  background-color: #57687a;
+
+  padding: 0.9rem 0.9rem;
+  margin: 2rem 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta-button a {
+  color: #FFFFFF;
+}
+
+.cta-button:hover {
+  background-color:#316bad;
+
+  transition: all .5s ease-in-out;
+}
+
+        /*================*/
+/****** MOBILE FOR MAIN BANNER *****/
+      /*================*/
+@media only screen and (max-width: 470px) {
+  .jumbotron {
+    flex-direction:column;
+    padding:0;
+  }
+
+.cta {
+  padding-left: 1.3rem;
+  width: 100%;
+}
+
+}
+
+/*================*/
+/*News container*/
+/*================*/
+
+.news {
+  padding: 3.7rem 2rem;
+  width:auto;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 2rem;
+  /*border: 1px solid red;*/
+}
+
+      .card-img {
+        width: 35%;
+        /*border: 1px solid green;*/
+      }
+
+      .card-img img {
+        max-width: 100%;
+
+        }
+      .card-img-mobile {
+        display: none;
+      }
+
+      .card-info {
+        width: 65%;
+        margin: 0 0 0 2.7rem;
+      }
+
+      .card:first-child {
+        padding-top: 0rem;
+      }
+
+      .card:nth-child(1n+3) {
+        background-color: #c3cfdd;
+      }
+
+      .card p {
+        line-height: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .read-more {
+        border: 1px solid black;
+        padding: 0 1rem;
+        border-radius: 20px;
+      }
+
+/*================*/
+/****** MOBILE FOR NEWS *****/
+/*================*/
+@media only screen and (max-width: 470px){
+  .news {
+    padding-top:2rem;
+  }
+
+  .news .left-container {
+    display:none;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .card-img {
+    width: 100%;
+  }
+
+  .card-img-desktop {
+    display: none;
+  }
+
+  .card-img-mobile {
+    display: block;
+  }
+
+  .card-info {
+    margin:0;
+    padding:1.33rem 0;
+  }
+
+ }
+
+
+/*=========*/
+/*Courses*/
+/*=========*/
+
+.courses {
+  display:block;
+  padding-bottom: 2.7rem;
+  background-color: #c3cfdd;
+  width:auto;
+}
+
+.section-header {
+  /*border:1px solid orange; */
+  margin: 0;
+  text-align: center;
+  padding-top: 2.7rem;
+  padding-bottom: 2.7rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+.grid-item {
+  padding-right: 2.7rem;
+  /*border: 1px solid green;*/
+  max-width: 25%;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item-head {
+  /*border: 1px solid red;*/
+  background: white;
+  align-items: stretch;
+  height:100%;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/*================*/
+/* Mobile for Courses */
+/*================*/
+
+@media only screen and (max-width: 470px) {
+  .courses {
+    background: white;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid-item {
+    max-width: 100%;
+  }
+
+  .grid-item-img {
+    display: none;
+  }
+
+.grid-item-head {
+  background: #DCDCDC;
+  padding: 1.33rem 1.33rem;
+}
+
+  .grid-item-head h4, .grid-item-head p  {
+    display: none;
+  }
+
+  .grid-item-head h3 {
+
+  }
+
+}
+
+
+/*================*/
+/*Thesis*/
+/*================*/
+
+
+
+.thesis {
+  display: block;
+  padding: 3.7rem 2rem;
+  /*border: 1px solid purple;*/
+}
+
+.thesis video {
+  padding-bottom: 2rem;
+}
+
+.thesis .card:first-child {
+  padding-top: 2rem;
+  background-color: #c3cfdd;
+}
+
+/*================*/
+/*Mobile for Thesis*/
+/*================*/
+
+@media only screen and (max-width: 470px) {
+
+  .mobile-hide {
+    display:none;
+  }
+
+.thesis {
+  padding:0rem;
+  margin-bottom: 2rem;
+}
+
+.thesis .right-container {
+  display: none;
+}
+
+.thesis video {
+  width: 100%;
+  padding-bottom: 0rem;
+}
+
+}
+
+/*================*/
+/*Footer*/
+/*================*/
+
+footer {
+  border-top: 1px solid #bdccd4;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 3rem;
+}
+
+.user-rights {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+/*================*/
+/*Mobile for footer*/
+/*================*/
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding: 1.33rem 0;
+  }
+
+  .terms, .privacy {
+    display: none;
+    font-size: 1rem;
+  }
